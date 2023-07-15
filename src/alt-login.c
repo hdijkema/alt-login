@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	char passwd[100];
 	char *ip_adr = "unknown";
 
-   openlog("alt-login", LOG_PID, LOG_AUTH|LOG_SYSLOG);
+   openlog("alt-login", LOG_PID, LOG_AUTH);
 
 	int i;
    bool ip = false;

@@ -4,7 +4,9 @@ After=syslog.target
 After=network.target
 
 [Service]
-ExecStart=/opt/ttyd/ttyd /opt/ttyd/alt-login >/var/log/ttyd.log 2>&1
+ExecStart=/opt/ttyd/ttyd -a /opt/ttyd/alt-login 
+StandardOutput=file:/var/log/ttyd.log
+StandardError=file:/var/log/ttyd.log
 Type=simple
 Restart=always
 User=root
