@@ -1,4 +1,4 @@
 
 
-alt-login: alt-login.c
-	gcc -O2 -o alt-login alt-login.c -lcrypt
+/opt/ttyd/alt-login: alt-login.c
+	gcc -O2 -o /opt/ttyd/alt-login alt-login.c -lcrypt
